@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import data from '../../assets/data/db.json';
+import { Sentence } from './interfaces/sentence';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  
+  arrData: Sentence[] = data
 
 }

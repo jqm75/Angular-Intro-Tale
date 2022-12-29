@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Sentence } from '../interfaces/sentence';
 
 @Component({
   selector: 'app-escena',
@@ -7,5 +8,12 @@ import { Component } from '@angular/core';
 })
 export class EscenaComponent {
 
+  @Input() arrSentence: Sentence[] = []
+  currentSentence : number = 0
+
+  prev(){}
+  next(){}
+  
+  
 }
 
