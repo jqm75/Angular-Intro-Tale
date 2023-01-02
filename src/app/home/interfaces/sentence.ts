@@ -1,6 +1,6 @@
 export interface Sentence {
-  text: string,
-  image: string
+  txt: string,
+  img: string
 }
 
 
