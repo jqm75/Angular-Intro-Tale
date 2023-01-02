@@ -1,6 +1,8 @@
-<button>Anterior</button>
-<button>Següent</button>
+<div id="button-container">
+    <button id="prev" (click)="navigate('prev')">Anterior</button>
+    <button id="next" (click)="navigate('next')">Següent</button>
+</div>
 
 <div *ngFor="let sentence of arrSentence" >
-    <p>{{sentence.text}}</p>
+    <p>{{ sentence.text }}</p>
 </div>
