@@ -1,2 +1,10 @@
+<div *ngIf="false; else showWelcome">
 
-<app-escena [arrSentence]="arrData"></app-escena>
+    <app-escena [arrSentence]="arrData"></app-escena>
+    
+</div>
+
+<ng-template #showWelcome>
+
+</ng-template>
+
