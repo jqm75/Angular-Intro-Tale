@@ -10,8 +10,6 @@ import { Sentence } from '../interfaces/sentence';
 
 export class EscenaComponent {
 
-  
-
   @Input() arrSentence: Sentence[] = []
   currentSentence: number = 0
 

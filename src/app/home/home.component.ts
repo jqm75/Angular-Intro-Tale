@@ -12,7 +12,8 @@ import { Sentence } from './interfaces/sentence';
 
 export class HomeComponent {
 
-  /* showWelcome : Boolean = true; */
+  show : boolean = false;
+
   arrData: Sentence[] = data
 
 }

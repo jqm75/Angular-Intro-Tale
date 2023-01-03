@@ -1,10 +1,13 @@
-<div *ngIf="false; else showWelcome">
+<div *ngIf="show; else showWelcome">
 
     <app-escena [arrSentence]="arrData"></app-escena>
     
 </div>
 
 <ng-template #showWelcome>
-
+    <h1 class="h1 fw-bolder">Vet aquí un heroi...</h1>
+    
 </ng-template>
+
+<input id="mutantButton" type="button" class="btn btn-outline-dark fw-bold w-50" [value]="show?'Surt':'Inicia'" (click)="show=!show">
 

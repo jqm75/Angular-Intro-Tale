@@ -1,8 +1,15 @@
-<div id="button-container">
-    <button id="prev" (click)='prev()'>Anterior</button>
-    <button id="next" (click)='next()'>Següent</button>
-</div>
+<div class="bg-image" style="background-image: url({{arrSentence[currentSentence].img}})">
 
-<div *ngFor="let sentence of arrSentence; index as i" >
-    <p [ngClass]="{'selected':currentSentence === i}">{{ sentence.txt }}</p>
+    <div id="button-container">
+
+        <button id="prev" (click)='prev()'>Anterior</button>
+        <button id="next" (click)='next()'>Següent</button>
+
+    </div>
+
+    <div *ngFor="let sentence of arrSentence; index as i">
+
+        <p [ngClass]="{'selected':currentSentence === i}"> {{ sentence.txt }}</p>
+
+    </div>
 </div>
