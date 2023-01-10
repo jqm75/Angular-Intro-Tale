@@ -13,7 +13,6 @@ import { Sentence } from './interfaces/sentence';
 export class HomeComponent {
 
   show : boolean = false;
-
   arrData: Sentence[] = data
 
 }

@@ -1,13 +1,22 @@
-<div *ngIf="show; else showWelcome">
-
-    <app-escena [arrSentence]="arrData"></app-escena>
+<!-- <section class="bg-image"> -->
+    <div *ngIf="show; else showWelcome">
+        <app-escena [arrSentence]="arrData"></app-escena>
+    </div>
     
-</div>
-
-<ng-template #showWelcome>
-    <h1 class="h1 fw-bolder">Vet aquí un heroi...</h1>
+    <div id="buttonBox" [ngClass]="show ? 'toFixedEscena' : 'toFixedWelcome'">
+        
+        <div class="w-100"><input type="button" class="btn btn-success fw-bold" [value]="show ? 'Surt' : 'Inicia'" (click)="show=!show"></div>
     
-</ng-template>
-
-<input id="mutantButton" type="button" class="btn btn-outline-dark fw-bold w-50" [value]="show?'Surt':'Inicia'" (click)="show=!show">
+    </div>
+    
+    <ng-template class="justify-cotent-center" #showWelcome>
+    
+        <h1 class="h1 col-auto text-center fw-bolder">Vet aquí un heroi...</h1>
+        <p class="text p-4 m-5 rounded-3" id="text">
+            Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless bloody creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu decapitare non mortus.
+        </p>
+        <!-- <button type="button" (click)="show()">Inicia</button> -->
+        
+    </ng-template>
+<!-- <section> -->
 
