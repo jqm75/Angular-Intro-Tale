@@ -3,9 +3,8 @@
         <app-escena [arrSentence]="arrData"></app-escena>
     </div>
     
-    <div id="buttonBox" [ngClass]="show ? 'toFixedEscena' : 'toFixedWelcome'">
-        
-        <div class="w-100"><input type="button" class="btn btn-success fw-bold" [value]="show ? 'Surt' : 'Inicia'" (click)="show=!show"></div>
+    <div class="grid w-100 position-fixed" [ngClass]="show ? 'toFixedEscena' : 'toFixedWelcome'">
+        <div id="buttonBox" class="col-2 offset-5"><input type="button" class="btn btn-success fw-bold" [value]="show ? 'Surt' : 'Inicia'" (click)="show=!show"></div>
     
     </div>
     

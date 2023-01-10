@@ -8,25 +8,20 @@ h1{
 
 
 #buttonBox {
-    
     display: flex;
-    flex-direction: column;
-    position: fixed;
-    align-items: center;
     justify-content: center;
-    
-
 }
+
 .toFixedWelcome {
 
     bottom: 40%;
-    left: 50%;
+    // left: 50%;
 
 }
 
 .toFixedEscena {
 
     bottom: 50%;
-    left: 50%;
+    // left: 50%;
 
 }
