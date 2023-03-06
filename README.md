@@ -1,4 +1,4 @@
-# S6-Angular: Introducción a Angular
+# S6-Angular: Introduction to Angular
 
 ![Conte](src/assets/s6.png "Conte")
 
